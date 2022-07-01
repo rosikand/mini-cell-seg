@@ -13,5 +13,7 @@ Data is a list of the form `[(x,y), (x,y),..., (x,y)]` where each `x` is normali
 
 - `np_cell_data.pkl`: dataset where each sample (image and mask) are float numpy arrays. 
 - `jax_cell_data.pkl`: same as the numpy version except the arrays are jaxlib arrays. Reduces size by 10 mb!
+- `jax_cell_data_same_shape.pkl`: same as above but the images and masks have same shape and size. Originally, the images are of shape `(224, 224, 3)` (RGB) and the masks are of shape `(224, 224, 1)` (grayscale). This dataset file loads in the images in grayscale format making the shape the same as the mask `(224, 224, 1)`. This makes it convenient when using e.g., loss functions. 
+
 
 ![image](https://user-images.githubusercontent.com/57341225/176973764-eca2160f-3d43-43bb-b2f2-c71624463aff.png)
