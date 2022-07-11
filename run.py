@@ -9,8 +9,7 @@ import numpy as np
 
 
 sub_dirs = glob("data/*/", recursive = True)
-size = 224, 224  # all images will be resized to this 
-new_size = (224, 224)
+new_size = (224, 224) # all images will be resized to this
 data_set = []
 
 for subdir in sub_dirs:
